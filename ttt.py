@@ -1,23 +1,25 @@
 import sys
 
 if len(sys.argv) == 5:
-    name=sys.argv[1]
-    marks1=int(sys.argv[2])
-    marks2=int(sys.argv[3])
-    marks3=int(sys.argv[4])
-    ascore=(marks1 + marks2 + marks3) / 3
+    course_name=sys.argv[1]
+    instructor_name=sys.argv[2]
+    duration=int(sys.argv[3])
+    fees=int(sys.argv[4])
+    print("Course details")
+    print("Course Name:", course_name)
+    print("Instructor Name:", instructor_name)
+    print("Duration (in hours):", duration)
+    print("Fees:", fees)
 
-    print("Student details")
-    print("Name:", name)
-    print("Average marks:", ascore)
+
 else:
-    name="xyz"
-    marks1=0
-    marks2=0
-    marks3=0
-    ascore=(marks1 + marks2 + marks3) / 3
-
-    print("Student details")
-    print("Name:", name)
-    print("Average marks:", ascore)
+    course_name="xyz"
+    instructor_name="eyz"
+    duration=0
+    fees=0
+    print("Course details")
+    print("Course Name:", course_name)
+    print("Instructor Name:", instructor_name)
+    print("Duration (in hours):", duration)
+    print("Fees:", fees)
     print("This is default values")
